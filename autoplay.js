@@ -1,16 +1,17 @@
+// autoplay minxin
 export const autoplay = {
     props: {
-        
+        // 是否自动轮播
         autoplay: {
             type: Boolean,
             default: false
         },
-        
+        // 轮播时间
         autoplayTimeout: {
             type: Number,
             default: 2000
         },
-       
+       // PC下悬浮停止
         autoplayHoverPause: {
             type: Boolean,
             default: true
@@ -18,7 +19,7 @@ export const autoplay = {
     },
     data () {
         return {
-            autoplayInterval: null
+            autoplayInterval: null // 轮播间隔
         }
     },
     destroyed () {
@@ -52,6 +53,7 @@ export const autoplay = {
         this.startAutoplay()
     },
     watch: {
+        // 监听antoplay值, 控制是否自动轮播
         autoplay(value) {
             if (value) {
                 this.startAutoplay()
