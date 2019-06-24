@@ -23,58 +23,58 @@ export default {
   },
   props: {
     count: {
-      type: [Number, String],
+      type: [Number, String], // 轮播数量
       default: 0
     },
     perspective: {
-      type: [Number, String],
+      type: [Number, String], // 视距
       default: 35
     },
     display: {
-      type: [Number, String],
+      type: [Number, String], // 默认展示页面数量
       default: 5
     },
     loop: {
-      type: Boolean,
+      type: Boolean, // 是否循环轮播
       default: true
     },
     animationSpeed: {
-      type: [Number, String],
+      type: [Number, String], // 轮播速度
       default: 500
     },
     dir: {
-      type: String,
+      type: String, // 方向
       default: "rtl"
     },
     width: {
-      type: [Number, String],
+      type: [Number, String], // 图片宽度
       default: 360
     },
     height: {
-      type: [Number, String],
+      type: [Number, String], // 图片高度
       default: 270
     },
     border: {
-      type: [Number, String],
+      type: [Number, String], // 边框
       default: 1
     },
     space: {
-      type: [Number, String],
+      type: [Number, String], // 间距
       default: "auto"
     },
     startIndex: {
-      type: [Number, String],
+      type: [Number, String], // 起始索引
       default: 0
     },
     clickable: {
-      type: Boolean,
+      type: Boolean, // 是否可点击
       default: true
     },
     disable3d: {
-      type: Boolean,
+      type: Boolean, // 禁用3d
       default: false
     },
-    minSwipeDistance: {
+    minSwipeDistance: { // 最小触发的滑动距离
       type: Number,
       default: 50
     },
@@ -82,8 +82,9 @@ export default {
       type: [Number, String],
       default: 300
     },
+    // 控制条; 视情况添加, 移动端可以不用
     controlsVisible: {
-      type: Boolean,
+      type: Boolean, 
       default: false
     },
     controlsPrevHtml: {
