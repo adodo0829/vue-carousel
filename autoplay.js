@@ -1,4 +1,4 @@
-// autoplay minxin
+// autoplay mixins
 export const autoplay = {
     props: {
         // 是否自动轮播
